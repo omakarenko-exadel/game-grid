@@ -1,6 +1,6 @@
 $bg-color: yellow;
 $border-color: red;
-
+$cell-width: 40px;
 .app {
   font-family: helvetica, arial, sans-serif;
   padding: 2em;
@@ -9,4 +9,12 @@ $border-color: red;
   p {
     background-color: $bg-color;
   }
+}
+
+.testClass {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
 }

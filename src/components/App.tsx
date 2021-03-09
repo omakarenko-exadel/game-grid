@@ -1,17 +1,18 @@
 import * as React from "react";
-import { hot } from "react-hot-loader";
+import { Lines } from "react-preloaders";
 import "./../assets/scss/App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Board from "./Board";
 
-class App extends React.Component<Record<string, unknown>, undefined> {
-  public render() {
-    return (
-      <div className="app">
-        <h1>Hello World!</h1>
+const App: React.FC = (): JSX.Element => {
+  return (
+    <React.Fragment>
+      <div className="testClass">
+        <Board />
       </div>
-    );
-  }
-}
+      <Lines background="#7c9eb2" animation="fade" time={3000} />
+    </React.Fragment>
+  );
+};
 
-declare let module: Record<string, unknown>;
-
-export default hot(module)(App);
+export default App;

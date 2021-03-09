@@ -1,0 +1,14 @@
+@import "../../assets/scss/App.scss";
+
+.cell {
+    width: $cell-width;
+    height: $cell-width;
+    border: 1px solid black;
+    background-color: white;
+}
+.selectedFirst {
+    background-color: red;
+}
+.selectedSecond {
+    background-color: green;
+}

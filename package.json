@@ -13,7 +13,7 @@
     "boilerplate"
   ],
   "author": "Olesia Makarenko",
-  "license": "MIT",    
+  "license": "MIT",
   "scripts": {
     "build": "yarn run clean-dist && webpack --config=configs/webpack/prod.js",
     "clean-dist": "rimraf dist/*",
@@ -60,5 +60,11 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.7.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "classnames": "^2.2.6",
+    "react-bootstrap": "^1.5.1",
+    "react-preloaders": "^3.0.3",
+    "uuid": "^3.4.0"
+  }
 }
