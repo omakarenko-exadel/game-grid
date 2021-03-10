@@ -8,7 +8,7 @@ interface Props {
 }
 
 const classes = ["", "selectedFirst", "selectedSecond"];
-const Cell = ({ color, eHandler }: Props) => {
+const Cell = ({ color, eHandler }: Props): JSX.Element => {
   return (
     <>
       <div

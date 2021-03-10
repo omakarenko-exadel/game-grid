@@ -1,17 +1,22 @@
 import * as React from "react";
-import { Lines } from "react-preloaders";
 import "./../assets/scss/App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Starter from "./Starter";
 import Board from "./Board";
+import Final from "./Final";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App: React.FC = (): JSX.Element => {
   return (
-    <React.Fragment>
-      <div className="testClass">
-        <Board />
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Starter} />
+          <Route path="/board" component={Board} />
+          <Route path="/final" component={Final} />
+        </Switch>
       </div>
-      <Lines background="#7c9eb2" animation="fade" time={3000} />
-    </React.Fragment>
+    </Router>
   );
 };
 
