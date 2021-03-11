@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button, Col, Image } from "react-bootstrap";
+import { Form, Button, Col, Image, Container } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { changePlayerNames, changeBoardSize } from "../redux/actions";
@@ -33,10 +33,10 @@ const MainForm: React.FC = (): JSX.Element => {
 
   return (
     <>
-      <div className="mainForm">
+      <Container className="mainForm">
         <Col xs={12} sm={8} md={6} lg={4} className="mainForm__wrapper">
           <Form onSubmit={submitHandler}>
-            <h2 className="d-flex justify-content-center">Grid Square Game</h2>
+            <h2 className="mainForm__text">Grid Square Game</h2>
             <div className="d-flex justify-content-between pt-1 pb-2">
               <Button variant="success" type="submit">
                 Старт
@@ -90,7 +90,7 @@ const MainForm: React.FC = (): JSX.Element => {
             </Col>
           </div>
         </Col>
-      </div>
+      </Container>
     </>
   );
 };

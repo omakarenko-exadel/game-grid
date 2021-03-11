@@ -47,7 +47,7 @@ const BoardField: React.FC = () => {
   return (
     <>
       <Container>
-        <Row>
+        <Row className="d-flex justify-content-center">
           <Button variant="light" onClick={returnHandler} className="ml-1">
             Перезапустить
           </Button>

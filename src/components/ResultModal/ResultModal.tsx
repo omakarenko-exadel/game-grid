@@ -28,7 +28,7 @@ const ResultModal = (props: IProps): JSX.Element => {
             rounded
             thumbnail
           />
-          <h1 className="ResultModal__text">{`Победил ${player1[0]} c результатом ${player1[1]}`}</h1>
+          <h2 className="ResultModal__text">{`Победил ${player1[0]}, результат: ${player1[1]}`}</h2>
         </div>
       );
     } else if (player1[1] < player2[1]) {
@@ -40,7 +40,7 @@ const ResultModal = (props: IProps): JSX.Element => {
             rounded
             thumbnail
           />
-          <h1>{`Победил ${player2[0]} c результатом ${player2[1]}`}</h1>
+          <h2 className="ResultModal__text">{`Победил ${player2[0]}, результат: ${player2[1]}`}</h2>
         </div>
       );
     } else {
@@ -52,7 +52,7 @@ const ResultModal = (props: IProps): JSX.Element => {
             rounded
             thumbnail
           />
-          <h1 className="ResultModal__text">{`${player1[1]} : ${player2[1]}`}</h1>
+          <h2 className="ResultModal__text">{`${player1[1]} : ${player2[1]}`}</h2>
         </div>
       );
     }

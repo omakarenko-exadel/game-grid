@@ -14,42 +14,44 @@ export const ModalRules: React.FC = (): JSX.Element => {
         Правила игры
       </Button>
 
-      <Modal show={show} onHide={handleClose} centered>
+      <Modal show={show} onHide={handleClose} centered className="modal">
         <Modal.Header closeButton>
-          <Modal.Title>Правила игры для Grid Square Game</Modal.Title>
+          <Modal.Title className="modal__text">
+            Правила игры для Grid Square Game
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <ol>
             <li>
-              <p>
+              <span>
                 Для начала игры первый игрок выбирает ячейку и делает первый ход
-              </p>
+              </span>
             </li>
             <li>
-              <p>Игроки ходят по очереди</p>
+              <span>Игроки ходят по очереди</span>
             </li>
             <li>
-              <p>Игра заканчивается после заполнения всех ячеек</p>
+              <span>Игра заканчивается после заполнения всех ячеек</span>
             </li>
             <li>
-              <p>
+              <span>
                 Победа присуждается игроку с наибольшей площадью ячеек{" "}
                 <strong>подряд</strong>
-              </p>
+              </span>
             </li>
             <li>
-              <p>Удачи!</p>
+              <span>Удачи!</span>
             </li>
           </ol>
-          <div className="modalRules">
+          <div className="modal__img">
             <Image
-              className="modalRules__img"
+              className="modal__img-wrapper"
               src="../../src/assets/img/winExample.png"
               rounded
               thumbnail
             />
             <Image
-              className="modalRules__img"
+              className="modal__img-wrapper"
               src="../../src/assets/img/exampleWinGrey.png"
               rounded
               thumbnail

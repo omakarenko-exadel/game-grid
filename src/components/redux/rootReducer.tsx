@@ -3,7 +3,7 @@ import { ADD_NAME, CHANGE_BOARD, SystemState, ChangeNamesTypes } from "./types";
 const initialState: SystemState = {
   firstPlayerName: "Player 1",
   secondPlayerName: "Player 2",
-  boardSize: 2,
+  boardSize: 8,
 };
 
 export const rootReducer = (
