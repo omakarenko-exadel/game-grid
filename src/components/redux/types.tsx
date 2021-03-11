@@ -12,8 +12,8 @@ export interface ChangeBoard {
 }
 
 export interface SystemState {
-  firstPlayer: string;
-  secondPlayer: string;
+  firstPlayerName: string;
+  secondPlayerName: string;
   boardSize: number;
 }
 

@@ -1,8 +1,8 @@
 import { ADD_NAME, CHANGE_BOARD, SystemState, ChangeNamesTypes } from "./types";
 
 const initialState: SystemState = {
-  firstPlayer: "Player 1",
-  secondPlayer: "Player 2",
+  firstPlayerName: "Player 1",
+  secondPlayerName: "Player 2",
   boardSize: 2,
 };
 
@@ -14,8 +14,8 @@ export const rootReducer = (
     case ADD_NAME:
       return {
         ...state,
-        firstPlayer: action.payload[0],
-        secondPlayer: action.payload[1],
+        firstPlayerName: action.payload[0],
+        secondPlayerName: action.payload[1],
       };
     case CHANGE_BOARD:
       return {

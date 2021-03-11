@@ -4,19 +4,18 @@ import classnames from "classnames";
 
 interface Props {
   color: number;
-  eHandler: () => void;
+  cellClickHandler: () => void;
 }
 
-const classes = ["", "selectedFirst", "selectedSecond"];
-const Cell = ({ color, eHandler }: Props): JSX.Element => {
+const classes = ["", "cell__firstPlayer", "cell__secondPlayer"];
+
+const Cell = ({ color, cellClickHandler }: Props): JSX.Element => {
   return (
-    <>
-      <div
-        className={classnames("cell", classes[color])}
-        onClick={eHandler}
-      ></div>
-    </>
+    <div
+      onClick={cellClickHandler}
+      className={classnames("cell", classes[color])}
+    ></div>
   );
 };
 
-export default React.memo(Cell);
+export default Cell;

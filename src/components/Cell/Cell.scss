@@ -1,14 +1,44 @@
-@import "../../assets/scss/App.scss";
-
 .cell {
-    width: $cell-width;
-    height: $cell-width;
-    border: 1px solid black;
-    background-color: white;
-}
-.selectedFirst {
-    background-color: red;
-}
-.selectedSecond {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;   
+
+  &__firstPlayer {
+    position: relative;
     background-color: green;
+    color: white;
+    z-index: 10;
+    &:hover {
+      animation: wobble 1s 1; 
+      z-index: 101;
+    }    
+  }
+
+  &__secondPlayer {
+    position: relative;
+    background-color: red;
+    color: white;
+    z-index: 10;    
+    &:hover {
+      animation: wobble 1s 1; 
+      z-index: 101;
+    }
+  }  
 }
+
+@keyframes wobble {
+    25% {
+      transform: rotate(15deg) scale(1.4);      
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

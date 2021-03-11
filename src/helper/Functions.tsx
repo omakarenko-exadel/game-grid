@@ -1,4 +1,7 @@
-const findConnection = (inputArray: number[], player: number): number => {
+export const findConnection = (
+  inputArray: number[][],
+  player: number,
+): number => {
   const counts = [];
 
   const countConnected = (rowIndex, colIndex) => {
@@ -11,7 +14,7 @@ const findConnection = (inputArray: number[], player: number): number => {
     return 0;
   };
 
-  const neighborsOf = (i, j) => {
+  const neighborsOf = (i: number, j: number) => {
     return [
       [i - 1, j],
       [i + 1, j],
@@ -39,4 +42,11 @@ const findConnection = (inputArray: number[], player: number): number => {
   return result >= 0 ? result : 0;
 };
 
-export default findConnection;
+export const newMatrix = (size: number): number[] => {
+  const sub = new Array(size);
+  for (let index = 0; index < sub.length; index++) {
+    sub[index] = new Array(size).fill(0);
+  }
+
+  return sub;
+};
