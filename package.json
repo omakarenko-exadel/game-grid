@@ -2,6 +2,7 @@
   "homepage": "http://omakarenko-exadel.github.io/game-grid",
   "name": "game-grid",
   "version": "0.1.0",
+  "private": true,
   "description": "Simple two players game",
   "keywords": [
     "react",
@@ -23,7 +24,7 @@
     "start-dev": "webpack serve --config=configs/webpack/dev.js",
     "start-prod": "yarn run build && node express.js",
     "test": "jest --coverage --watchAll --config=configs/jest.json",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {

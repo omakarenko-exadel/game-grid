@@ -4,11 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import StarterPage from "./StarterPage";
 import Board from "./Board";
 import ResultModal from "./ResultModal";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 const App: React.FC = (): JSX.Element => {
   return (
-    <Router>
+    <Router basename="/">
       <div>
         <Switch>
           <Route exact path="/" component={StarterPage} />
