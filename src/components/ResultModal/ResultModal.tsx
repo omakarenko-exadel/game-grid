@@ -24,7 +24,7 @@ const ResultModal = (props: IProps): JSX.Element => {
         <div className="ResultModal">
           <Image
             className="ResultModal__img"
-            src="./../../src/assets/img/winnerimg.jpeg"
+            src="https://i.ibb.co/6Zw8X0T/winnerimg.jpg"
             rounded
             thumbnail
           />
@@ -36,7 +36,7 @@ const ResultModal = (props: IProps): JSX.Element => {
         <div className="ResultModal">
           <Image
             className="ResultModal__img"
-            src="./../../src/assets/img/winnerimg.jpeg"
+            src="https://i.ibb.co/6Zw8X0T/winnerimg.jpg"
             rounded
             thumbnail
           />
@@ -48,7 +48,7 @@ const ResultModal = (props: IProps): JSX.Element => {
         <div className="ResultModal">
           <Image
             className="ResultModal__img"
-            src="./../../src/assets/img/drawimage.png"
+            src="https://i.ibb.co/TgLH1Q7/drawimage.png"
             rounded
             thumbnail
           />
