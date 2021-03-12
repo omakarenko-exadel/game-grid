@@ -86,7 +86,7 @@ const MainForm: React.FC = (): JSX.Element => {
           </Form>
           <div className="d-flex justify-content-center pt-1">
             <Col className="pt-1">
-              <Image src="./../../src/assets/img/gameImg.png" thumbnail />
+              <Image src="./../../src/assets/img/gameimg.png" thumbnail />
             </Col>
           </div>
         </Col>

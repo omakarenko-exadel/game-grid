@@ -46,13 +46,13 @@ export const ModalRules: React.FC = (): JSX.Element => {
           <div className="modal__img">
             <Image
               className="modal__img-wrapper"
-              src="./../../src/assets/img/winExample.png"
+              src="./../../src/assets/img/winexample.png"
               rounded
               thumbnail
             />
             <Image
               className="modal__img-wrapper"
-              src="./../../src/assets/img/exampleWinGrey.png"
+              src="./../../src/assets/img/examplewingrey.png"
               rounded
               thumbnail
             />

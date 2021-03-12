@@ -32,7 +32,7 @@ const PlayerTable = (props: IProps) => {
           <Card className="board__table-card">
             <Card.Img
               variant="top"
-              src="./../../src/assets/img/simpleAvatar.png"
+              src="/../../src/assets/img/simpleavatar.png"
             />
             <Card.Body className="board__table-body">
               <span className="board__table-text">{firstPlayer}</span>
@@ -44,7 +44,7 @@ const PlayerTable = (props: IProps) => {
           <Card className="board__table-card">
             <Card.Img
               variant="top"
-              src="./../../src/assets/img/simpleAvatar.png"
+              src="../../src/assets/img/simpleavatar.png"
             />
             <Card.Body className="board__table-body">
               <span className="board__table-text">{secondPlayer}</span>
